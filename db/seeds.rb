@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-valid_categories = ['chinese', 'italian', 'japanese', 'french', 'belgian']
+valid_categories = %w[chinese italian japanese french belgian]
 
 puts 'Cleaning database...'
 Restaurant.destroy_all
