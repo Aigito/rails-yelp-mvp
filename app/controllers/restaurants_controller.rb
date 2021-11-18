@@ -16,6 +16,11 @@ class RestaurantsController < ApplicationController
     redirect_to restaurant_path(@restaurant)
   end
 
+
+  # This is only necessary if we have the "add new" form on a separate page
+  # This is all the XXX.new is doing
+  # A better way to do this is to have the form in the show page
+  # If this is done then there is no need to define new in the controller
   def new
     @restaurant = Restaurant.new
   end
